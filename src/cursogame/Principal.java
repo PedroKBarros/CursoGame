@@ -1,21 +1,21 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package cursogame;
 
-/**
- *
- * @author pedro
- */
-public class Principal {
+import javax.swing.JFrame;
 
-    /**
-     * @param args the command line arguments
-     */
+public class Principal {
+    public static final int LARGURA_TELA = 640;
+    public static final int ALTURA_TELA = 480;
+    
+    public Principal(){
+        JFrame janela = new JFrame("Jogo2D");
+        janela.setSize(LARGURA_TELA, ALTURA_TELA);
+        janela.setResizable(false);
+        janela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        janela.setLocation(100, 100);
+        janela.setVisible(true);
+    }
     public static void main(String[] args) {
-        // TODO code application logic here
+        new Principal();
     }
     
 }
